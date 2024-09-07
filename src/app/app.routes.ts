@@ -9,7 +9,7 @@ export const routes: Routes = [
         component: CadastroContasComponent
     },
     {
-        path: 'app/consulta-contas/',
+        path: 'app/consulta-contas',
         component: ConsultaContasComponent
     },
     {

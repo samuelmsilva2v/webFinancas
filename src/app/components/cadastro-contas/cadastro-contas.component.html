@@ -1,1 +1,44 @@
-<p>cadastro-contas works!</p>
+<div class="card">
+    <div class="card-body">
+        <h4>Cadastro de contas a pagar ou receber</h4>
+        <p>Inclua movimentações financeiras</p>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label>Nome da conta:</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <label>Data da conta:</label>
+                    <input type="date" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <label>Valor da conta:</label>
+                    <input type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label>Tipo da conta:</label>
+                    <select class="form-select">
+                        <option value="">Escolha uma opção</option>
+                        <option value="RECEBER">Conta a receber</option>
+                        <option value="PAGAR">Conta a pagar</option>
+                    </select>
+                </div>
+                <div class="col-md-9">
+                    <label>Marque a(s) categoria(s) desta conta:</label>
+                    <div *ngFor="let c of categorias">
+                        <input type="checkbox" value="{{ c.id }}" />
+                        {{ c.nome | uppercase }}
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success" value="Realizar Cadastro" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

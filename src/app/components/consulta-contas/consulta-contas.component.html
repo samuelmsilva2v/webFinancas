@@ -1,1 +1,52 @@
-<p>consulta-contas works!</p>
+<div class="card">
+    <div class="card-body">
+
+
+        <h4>Consulta de contas a pagar e receber.</h4>
+        <p>Listagem de movimentações de contas.</p>
+
+
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>Nome da conta</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                        <th>Categorias</th>
+                        <th>Operações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let conta of contas">
+                        <td>{{ conta.nome | uppercase }}</td>
+                        <td>{{ conta.data | date : 'dd/MM/yyyy' }}</td>
+                        <td>{{ conta.valor | currency : 'R$ ' }}</td>
+                        <td>{{ conta.tipo }}</td>
+                        <td>
+                            <div *ngFor="let c of conta.categoria">
+                                {{ c.nome | uppercase }}
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm 
+                             btn-outline-primary me-2">Editar</button>
+                            <button class="btn btn-sm 
+                             btn-outline-danger">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            Quantidade de contas: {{ contas.length }}
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+
+    </div>
+</div>
