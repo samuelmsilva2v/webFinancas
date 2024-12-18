@@ -59,7 +59,7 @@ Isso irá iniciar o servidor de desenvolvimento na URL http://localhost:4200/. V
 ## Description
 This is a front-end project developed with **Angular**. The goal of this project is to create an application for financial management, including tracking income, expenses, transaction categories, and a user's total balance.
 
-## Technologies / Tecnologias
+## Technologies
 The project uses the following technologies:
 
 - **Angular**
