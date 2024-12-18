@@ -1,27 +1,51 @@
-# WebFinancas
+# Web Finanças
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+## Descrição
 
-## Development server
+Este é um projeto de front-end desenvolvido com **Angular**. O objetivo do projeto é desenvolver uma aplicação para controle de finanças, controle de receitas, despesas, categorias de transações e o saldo total de um usuário .
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologias
 
-## Code scaffolding
+O projeto utiliza as seguintes tecnologias:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**
+- **TypeScript**
+- **Reactive Forms**
+- **HttpClient**
+- **Bootstrap**
+- **Angular CLI**
 
-## Build
+## Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Certifique-se de ter os seguintes itens instalados em sua máquina antes de rodar o projeto:
 
-## Running unit tests
+- [Node.js](https://nodejs.org/) (versão recomendada: 16.x ou superior)
+- [Angular CLI](https://angular.io/cli) (versão recomendada: 14.x ou superior)
+- [npm](https://www.npmjs.com/) (gerenciador de pacotes)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação
 
-## Running end-to-end tests
+1. Clone este repositório para o seu computador:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    git clone https://github.com/samuelmsilva2v/webFinancas.git
+    cd webFinancas
+    ```
 
-## Further help
+2. Instale as dependências do projeto:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    npm install
+    ```
+
+## Rodando o projeto
+Após a instalação das dependências, execute o projeto:
+
+```bash
+$ ng s -o 
+```
+
+Isso irá iniciar o servidor de desenvolvimento na URL http://localhost:4200/. Você pode abrir seu navegador e acessar essa URL para visualizar a aplicação.
+
+![](https://github.com/samuelmsilva2v/assets/blob/main/apiFinancas/Captura%20de%20tela%202024-10-31%20184207.png)
+![](https://github.com/samuelmsilva2v/assets/blob/main/apiFinancas/Captura%20de%20tela%202024-10-31%20184231.png)
