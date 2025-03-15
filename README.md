@@ -97,7 +97,7 @@ Isso irá iniciar o servidor de desenvolvimento na URL http://localhost:4200/. V
 
 # Financial Control Web
 
-[🇧🇷 Leia em Português](#web-controle-de-finanças)
+[🇧🇷 Leia em Português](#controle-de-finanças-web)
 
 💸 This is a front-end project developed with **Angular**. The goal of the project is to develop an application for financial management, including tracking income, expenses, transaction categories, and the total balance of a user.
 
